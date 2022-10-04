@@ -17,6 +17,7 @@ import NewsletterModal from '../components/NewsletterModal';
 import WaveCta from '../components/WaveCta';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from '../contexts/newsletter-modal.context';
 import { NavItems } from '../types';
+import { EnvVars } from '../env';
 
 
 
@@ -24,8 +25,8 @@ const navItems: NavItems = [
   { title: 'Awesome SaaS Features', href: '/features' },
   { title: 'Pricing', href: '/pricing' },
   { title: 'Contact', href: '/contact' },
-  { title: 'Sign up', href: '/sign-up', outlined: true },
 ];
+export const siteTitle = "Electrical specialists serving surrey and surrounding areas.";
 
 
 
@@ -45,6 +46,20 @@ function MyApp({ Component, pageProps }: AppProps) {
           }}
         /> */}
         {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
+        <link rel="icon" href="/images/logo.webp" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta
+          name="description"
+          content="Electrical specialists serving surrey and surrounding areas.."
+        />
+        <meta name="og:title" content={siteTitle} />
+        <meta
+          name="Electricalsurrey  Ltd"
+          content={siteTitle}
+        />
+        <title>{siteTitle}</title>
       </Head>
       <ColorModeScript />
       <GlobalStyle />

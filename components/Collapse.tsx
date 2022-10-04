@@ -1,5 +1,8 @@
+import React, { useState } from 'react';
+
 import { forwardRef, PropsWithChildren } from 'react';
 import AnimateHeight from 'react-animate-height';
+const [height, setHeight] = useState(0);
 
 export interface CollapseProps {
   isOpen?: boolean;
@@ -32,7 +35,7 @@ const Collapse = forwardRef<HTMLDivElement, PropsWithChildren<CollapseProps>>(
         duration={duration}
         easing={easing}
         animateOpacity={animateOpacity}
-        height={isOpen ? endingHeight : startingHeight}
+        height={height} 
         applyInlineTransitions={false}
         {...{ onAnimationStart, onAnimationEnd }}
         style={{

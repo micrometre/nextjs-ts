@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
+import { DefaultFoRmFields, MailchimpSubscribe } from 'react-mailchimp-subscribe';
 import styled from 'styled-components';
+import { EnvVars } from '../env';
+import useEscClose from '../hooks/useEscKey';
+import { media } from '../utils/media';
+import Button from './Button';
+import CloseIcon from './CloseIcon';
+import Container from './Container';
+import Input from './Input';
+import MailSentState from './MailSentState';
+import Overlay from './Overlay';
 
 export interface NewsletterModalProps {
   onClose: () => void;
@@ -10,13 +20,6 @@ export default function NewsletterModal({ onClose }: NewsletterModalProps) {
 
   useEscClose({ onClose });
 
-  function onSubmit(event: React.FormEvent<HTMLFormElement>, enrollNewsletter: (props: DefaultFormFields) => void) {
-    event.preventDefault();
-    console.log({ email });
-    if (email) {
-      enrollNewsletter({ EMAIL: email });
-    }
-  }
 
   return (
     <MailchimpSubscribe
@@ -26,29 +29,6 @@ export default function NewsletterModal({ onClose }: NewsletterModalProps) {
         return (
           <Overlay>
             <Container>
-              <Card onSubmit={(event: React.FormEvent<HTMLFormElement>) => onSubmit(event, subscribe)}>
-                <CloseIconContainer>
-                  <CloseIcon onClick={onClose} />
-                </CloseIconContainer>
-                {hasSignedUp && <MailSentState />}
-                {!hasSignedUp && (
-                  <>
-                    <Title>Are you ready to enroll to the best newsletter ever?</Title>
-                    <Row>
-                      <CustomInput
-                        value={email}
-                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-                        placeholder="Enter your email..."
-                        required
-                      />
-                      <CustomButton as="button" type="submit" disabled={hasSignedUp}>
-                        Submit
-                      </CustomButton>
-                    </Row>
-                    {message && <ErrorMessage dangerouslySetInnerHTML={{ __html: message as string }} />}
-                  </>
-                )}
-              </Card>
             </Container>
           </Overlay>
         );
@@ -106,5 +86,17 @@ const Row = styled.div`
   height: 100%;
   width: 100%;
   margin-top: 3rem;
+
 `;
 
+const CustomButton = styled(Button)`
+  height: 100%;
+  padding: 1.8rem;
+  margin-left: 1.5rem;
+  box-shadow: var(--shadow-lg);
+`;
+
+const CustomInput = styled(Input)`
+  width: 60%;
+
+`;
