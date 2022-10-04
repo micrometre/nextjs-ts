@@ -58,19 +58,31 @@ export default function Footer() {
         <BottomBar>
           <ShareBar>
             <NextLink href="https://www.twitter.com/my-saas-startup" passHref>
-              <a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Read more about Seminole tax hike"
+              >
                 <TwitterIcon size={50} round={true} />
               </a>
             </NextLink>
 
             <NextLink href="https://www.facebook.com/my-saas-startup" passHref>
-              <a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Read more about Seminole tax hike"
+              >
                 <FacebookIcon size={50} round={true} />
               </a>
             </NextLink>
 
             <NextLink href="https://www.linkedin.com/my-saas-startup" passHref>
-              <a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Read more about Seminole tax hike"
+              >
                 <LinkedinIcon size={50} round={true} />
               </a>
             </NextLink>
@@ -87,7 +99,10 @@ function FooterList({ title, items }: SingleFooterList) {
     <ListWrapper>
       <ListHeader>{title}</ListHeader>
       {items.map((singleItem) => (
-        <ListItem key={singleItem.href} {...singleItem} />
+        <ListItem 
+        
+        
+        key={singleItem.href} {...singleItem} />
       ))}
     </ListWrapper>
   );
@@ -97,7 +112,12 @@ function ListItem({ title, href }: SingleFooterListItem) {
   return (
     <ListItemWrapper>
       <NextLink href={href} passHref>
-        <a>{title}</a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Read more about Seminole tax hike"
+
+        >{title}</a>
       </NextLink>
     </ListItemWrapper>
   );
