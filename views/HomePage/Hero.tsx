@@ -1,4 +1,6 @@
 import NextLink from 'next/link';
+import Image from 'next/image'
+
 import styled from 'styled-components';
 import Button from '../../components/Button';
 import ButtonGroup from '../../components/ButtonGroup';
@@ -13,18 +15,11 @@ export default function Hero() {
     <HeroWrapper>
       <Contents>
         <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <Heading>Electrical specialists serving surrey and surrounding areas.
+</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+Surrey electrical and car charging offer a full electrical service for all domestic and commercial properties. Our fully qualified engineers work to regulation standards in design, installation and niceic certification.
         </Description>
-        <CustomButtonGroup>
-          <NextLink href="#whitepaper" passHref>
-            <Button transparent>
-              Features <span>&rarr;</span>
-            </Button>
-          </NextLink>
-        </CustomButtonGroup>
       </Contents>
       <ImageContainer>
         <HeroIllustration />
@@ -60,6 +55,7 @@ const CustomButtonGroup = styled(ButtonGroup)`
 const ImageContainer = styled.div`
   display: flex;
   flex: 1;
+    margin-top: 22rem;
   justify-content: flex-end;
   align-items: flex-start;
 
@@ -68,7 +64,7 @@ const ImageContainer = styled.div`
   }
 
   ${media('<=desktop')} {
-    margin-top: 2rem;
+    margin-top: 22rem;
     justify-content: center;
     svg {
       max-width: 80%;

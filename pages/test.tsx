@@ -4,7 +4,8 @@ import BasicSection from '../components/BasicSection';
 import Link from '../components/Link';
 import { EnvVars } from '../env';
 import Cta from '../views/HomePage/Cta';
-
+import Hero from '../views/HomePage/Hero';
+import Partners from '../views/HomePage/Partners';
 export default function Homepage() {
   return (
     <>
@@ -15,6 +16,8 @@ export default function Homepage() {
           content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
         />
       </Head>
+      <Hero />
+          <Partners />
         <WhiteBackgroundContainer>
           <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
             <p>
@@ -38,6 +41,7 @@ export default function Homepage() {
           </BasicSection>
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
+        <Cta />
         </DarkerBackgroundContainer>
     </>
   );

@@ -13,24 +13,12 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          <SectionTitle>
+Electrical specialists serving surrey and surrounding areas.
+            </SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+            Surrey electrical and car charging offer a full electrical service for all domestic and commercial properties. Our fully qualified engineers work to regulation standards in design, installation and niceic certification.
           </Description>
-          <ButtonGroup>
-            <NextLink href="#early-access" passHref>
-              <Button>
-                Subscribe to the newsletter <span>&rarr;</span>
-              </Button>
-            </NextLink>
-            <NextLink href="#whitepaper" passHref>
-              <OutlinedButton transparent>
-                Features <span>&rarr;</span>
-              </OutlinedButton>
-            </NextLink>
-          </ButtonGroup>
         </Stack>
       </Container>
     </CtaWrapper>
