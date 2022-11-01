@@ -17,7 +17,7 @@ export default function Cta() {
 Electrical specialists serving surrey and surrounding areas.
             </SectionTitle>
           <Description>
-            Surrey electrical and car charging offer a full electrical service for all domestic and commercial properties. Our fully qualified engineers work to regulation standards in design, installation and niceic certification.
+          Surrey Electrical and Car Charging offer full electrical services for all domestic and commercial properties. Our qualified engineers work to regulation standards in design, installation and NICEIC Certification.
           </Description>
         </Stack>
       </Container>

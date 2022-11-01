@@ -1,11 +1,13 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import BasicSection from '../components/BasicSection';
-import Link from '../components/Link';
 import { EnvVars } from '../env';
 import Cta from '../views/HomePage/Cta';
 import Hero from '../views/HomePage/Hero';
 import Partners from '../views/HomePage/Partners';
+import BasicSection from '../components/BasicSection';
+import Testimonials from '../views/HomePage/Testimonials';
+
+
 export default function Homepage() {
   return (
     <>
@@ -17,7 +19,7 @@ export default function Homepage() {
         />
       </Head>
       <Cta />
-      <Partners />
+          <Testimonials />
     </>
   );
 }

@@ -44,7 +44,7 @@
                 /> */}
                 {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
 
-        <link rel="icon" href="/images/logo.webp" />
+        <link rel="icon" href="/logo.webp" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ffffff" />
