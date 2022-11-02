@@ -9,7 +9,7 @@ export default function ScrollableBlogPosts() {
 
 
   return (
-    <>
+    <Container>
           <CustomAutofitGrid>
             <ArticleCard
               title="We believe customer satisfaction and their recommendations to others is key to our business."
@@ -24,7 +24,7 @@ export default function ScrollableBlogPosts() {
               imageUrl="/5.webp"
             />
       </CustomAutofitGrid>
-    </>
+    </Container>
   );
 }
 
@@ -34,10 +34,6 @@ export default function ScrollableBlogPosts() {
 
 const CustomAutofitGrid = styled(AutofitGrid)`
   --autofit-grid-item-size: 40rem;
-  margin-top: 4rem;
-  margin-left: 14rem;
-  justify-content: space-between;
-  align-items: center;
 
 
 

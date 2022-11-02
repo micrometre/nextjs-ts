@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import BasicSection from '../components/BasicSection';
-import Link from '../components/Link';
+import BasicSection from './BasicSection';
+import Link from './Link';
 import { EnvVars } from '../env';
 import Cta from '../views/HomePage/Cta';
 import Hero from '../views/HomePage/Hero';

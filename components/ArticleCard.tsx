@@ -10,6 +10,8 @@ export interface ArticleCardProps {
 
 export default function ArticleCard({ title, imageUrl }: ArticleCardProps) {
   return (
+    <NextLink href={'/'} passHref>
+
       <ArticleCardWrapper className="article-card-wrapper">
         <HoverEffectContainer>
           <ImageContainer>
@@ -20,6 +22,8 @@ export default function ArticleCard({ title, imageUrl }: ArticleCardProps) {
           </Content>
         </HoverEffectContainer>
       </ArticleCardWrapper>
+      </NextLink>
+
   );
 }
 
