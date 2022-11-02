@@ -13,16 +13,15 @@
         import { GlobalStyle } from '../components/GlobalStyles';
         import Navbar from '../components/Navbar';
         import NavigationDrawer from '../components/NavigationDrawer';
-        import NewsletterModal from '../components/NewsletterModal';
         import WaveCta from '../components/WaveCta';
         import { NewsletterModalContextProvider, useNewsletterModalContext } from '../contexts/newsletter-modal.context';
         import { NavItems } from '../types';
         
         const navItems: NavItems = [
           { title: 'Home', href: '/' },
-          { title: 'Domestic', href: '/domestic' },
-          { title: 'Commercial', href: '/commercial' },
-          { title: 'Contact', href: '/contact' },
+          { title: 'Domestic', href: '/' },
+          { title: 'Commercial', href: '/' },
+          { title: 'Contact', href: '/' },
         ];
         export const siteTitle = "Electrical specialists serving surrey and surrounding areas.";
 
@@ -63,7 +62,6 @@
               <GlobalStyle />
         
               <Providers>
-                <Modals />
                 <Navbar items={navItems} />
                   <Component {...pageProps} />
                 <Footer />
@@ -80,12 +78,5 @@
           );
         }
         
-        function Modals() {
-          const { isModalOpened, setIsModalOpened } = useNewsletterModalContext();
-          if (!isModalOpened) {
-            return null;
-          }
-          return <NewsletterModal onClose={() => setIsModalOpened(false)} />;
-        }
         
         export default MyApp;        

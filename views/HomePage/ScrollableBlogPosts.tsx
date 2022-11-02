@@ -1,3 +1,4 @@
+import Link from '../../components/Link';
 import styled from 'styled-components';
 import ArticleCard from '../../components/ArticleCard';
 import Container from '../../components/Container';
@@ -11,7 +12,7 @@ export default function ScrollableBlogPosts() {
     <>
           <CustomAutofitGrid>
             <ArticleCard
-              title="We work a to very high standard and pride ourselves on being 100% honest."
+              title="We believe customer satisfaction and their recommendations to others is key to our business."
               imageUrl="/3.webp"
             />
             <ArticleCard
@@ -33,6 +34,7 @@ export default function ScrollableBlogPosts() {
 
 const CustomAutofitGrid = styled(AutofitGrid)`
   --autofit-grid-item-size: 40rem;
+  margin-top: 4rem;
   margin-left: 14rem;
   justify-content: space-between;
   align-items: center;

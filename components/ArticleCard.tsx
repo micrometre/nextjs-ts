@@ -8,7 +8,7 @@ export interface ArticleCardProps {
   imageUrl: string;
 }
 
-export default function ArticleCard({ title, imageUrl, description }: ArticleCardProps) {
+export default function ArticleCard({ title, imageUrl }: ArticleCardProps) {
   return (
       <ArticleCardWrapper className="article-card-wrapper">
         <HoverEffectContainer>
@@ -17,7 +17,6 @@ export default function ArticleCard({ title, imageUrl, description }: ArticleCar
           </ImageContainer>
           <Content>
             <Title>{title}</Title>
-            <Description>{description}</Description>
           </Content>
         </HoverEffectContainer>
       </ArticleCardWrapper>
