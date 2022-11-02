@@ -5,14 +5,12 @@ import { media } from '../utils/media';
 
 export interface ArticleCardProps {
   title: string;
-  slug: string;
   imageUrl: string;
   description: string;
 }
 
-export default function ArticleCard({ title, slug, imageUrl, description }: ArticleCardProps) {
+export default function ArticleCard({ title, imageUrl, description }: ArticleCardProps) {
   return (
-    <NextLink href={'/blog/' + slug} passHref>
       <ArticleCardWrapper className="article-card-wrapper">
         <HoverEffectContainer>
           <ImageContainer>
@@ -24,7 +22,6 @@ export default function ArticleCard({ title, slug, imageUrl, description }: Arti
           </Content>
         </HoverEffectContainer>
       </ArticleCardWrapper>
-    </NextLink>
   );
 }
 

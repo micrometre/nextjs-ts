@@ -6,7 +6,8 @@ import Hero from '../views/HomePage/Hero';
 import Partners from '../views/HomePage/Partners';
 import BasicSection from '../components/BasicSection';
 import Testimonials from '../views/HomePage/Testimonials';
-
+import Features from '../views/HomePage/Features';
+import ScrollableBlogPosts from '../views/HomePage/ScrollableBlogPosts';
 
 export default function Homepage() {
   return (
@@ -19,7 +20,7 @@ export default function Homepage() {
         />
       </Head>
       <Cta />
-          <Testimonials />
+          <ScrollableBlogPosts />
     </>
   );
 }
