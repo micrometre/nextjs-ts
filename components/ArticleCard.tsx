@@ -6,7 +6,6 @@ import { media } from '../utils/media';
 export interface ArticleCardProps {
   title: string;
   imageUrl: string;
-  description: string;
 }
 
 export default function ArticleCard({ title, imageUrl, description }: ArticleCardProps) {
@@ -28,7 +27,7 @@ export default function ArticleCard({ title, imageUrl, description }: ArticleCar
 const ArticleCardWrapper = styled.a`
   display: flex;
   flex-direction: column;
-  height: 45rem;
+  height: 30rem;
   max-width: 35rem;
   overflow: hidden;
   text-decoration: none;
