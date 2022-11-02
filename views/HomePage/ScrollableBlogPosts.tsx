@@ -35,14 +35,19 @@ export default function ScrollableBlogPosts() {
 const CustomAutofitGrid = styled(AutofitGrid)`
   --autofit-grid-item-size: 40rem;
 
-
+  border: 2px solid palevioletred;
+  border-radius: 3px;
 
 
   ${media('<=tablet')} {
-    --autofit-grid-item-size: 30rem;
+    --autofit-grid-item-size: 100%;
+  border: 2px solid green;
+  border-radius: 3px;
   }
 
   ${media('<=phone')} {
     --autofit-grid-item-size: 100%;
+  border: 2px solid blue;
+  border-radius: 3px;
   }
 `;

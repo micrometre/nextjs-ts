@@ -4,8 +4,8 @@ const Container = styled.div`
   position: relative;
   max-width: 130em;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
+  margin:  auto;
+  padding:  2rem;
 `;
 
 export default Container;
