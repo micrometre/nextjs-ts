@@ -5,8 +5,8 @@ export default function Logo({ ...rest }) {
                   <Image
               src="/logo.webp"
               alt="The surreyelc"
-              width={340}
-              height={79}
+              width={173}
+              height={36}
               priority
             />
   );

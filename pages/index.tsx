@@ -8,7 +8,7 @@ import BasicSection from '../components/BasicSection';
 import Testimonials from '../views/HomePage/Testimonials';
 import Features from '../views/HomePage/Features';
 import ScrollableBlogPosts from '../views/HomePage/ScrollableBlogPosts';
-
+import NavBar from '../components/Navbar';
 export default function Homepage() {
   return (
     <>
@@ -19,8 +19,9 @@ export default function Homepage() {
           content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
         />
       </Head>
+      <NavBar />
       <Cta />
-          <ScrollableBlogPosts />
+      <ScrollableBlogPosts />
     </>
   );
 }
