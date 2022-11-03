@@ -6,7 +6,7 @@ import '../styles/global.css'
 import { AppProps } from 'next/dist/shared/lib/router/router';
 import Head from 'next/head';
 import { ThemeProvider } from 'next-themes'
-
+import '../styles/global.css'
 import Footer from '../components/Footer';
 import { GlobalStyle } from '../components/GlobalStyles';
 

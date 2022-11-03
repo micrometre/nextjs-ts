@@ -16,24 +16,16 @@ export default function Cta() {
           <SectionTitle>
 Electrical specialists serving surrey and surrounding areas.
             </SectionTitle>
-          <Description>
-          Surrey Electrical and Car Charging offer full electrical services for all domestic and commercial properties. Our qualified engineers work to regulation standards in design, installation and NICEIC Certification.
-          </Description>
         </Stack>
       </Container>
     </CtaWrapper>
   );
 }
 
-const Description = styled.div`
-  font-size: 1.8rem;
-  color: rgba(var(--textSecondary), 0.8);
-`;
-
 const Stack = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 12.5rem 0;
+    margin-top: 4rem;
   color: rgb(var(--textSecondary));
   text-align: center;
   align-items: center;

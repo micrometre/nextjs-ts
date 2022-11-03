@@ -6,7 +6,7 @@ export default function Logo({ ...rest }) {
               src="/logo.webp"
               alt="The surreyelc"
               width={173}
-              height={36}
+              height={31}
               priority
             />
   );
